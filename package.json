@@ -1,0 +1,40 @@
+{
+  "name": "nodewwbapp",
+  "version": "1.0.0",
+  "description": "A sample node web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env DEBUG=app nodemon app.js",
+    "debug": "cross-env DEBUG=* nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashok416106/nodewwbapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashok416106/nodewwbapp/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://github.com/ashok416106/nodewwbapp#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "debug": "^4.4.0",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "nodemonConfig":{
+    "restartable":"rs",
+    "delay":2500,
+    "env":{
+      "PORT":4000
+    }
+  }
+}
